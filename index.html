@@ -1,219 +1,229 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ely Manoel Machado | Pré-Candidato a Deputado Federal</title>
+  <meta charset="UTF-8">
+  <title>Ely Manoel Machado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000000;
-    color: #FFFFFF;
-}
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
 
-/* HERO */
-.hero {
-    position: relative;
-    height: 100vh;
-    background: url('fotos/ely.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    animation: zoomHero 20s ease-in-out infinite alternate;
-    filter: contrast(1.1) brightness(0.9);
-}
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url("ely.jpg.png") center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.85) 0%,
-        rgba(0,0,0,0.6) 50%,
-        rgba(0,0,0,0.85) 100%
-    );
-}
+    .hero-content {
+      max-width: 800px;
+    }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    padding: 20px;
-}
-
-.hero h1 {
-    font-size: 56px;
-    font-weight: 800;
-    color: #FFB800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #FFFFFF;
-}
-
-/* BOTÕES */
-.buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 15px 28px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.btn-primary {
-    background-color: #FFB800;
-    color: #000;
-}
-
-.btn-primary:hover {
-    background-color: #FFC107;
-}
-
-.btn-outline {
-    border: 2px solid #FFB800;
-    color: #FFB800;
-}
-
-.btn-outline:hover {
-    background-color: #FFB800;
-    color: #000;
-}
-
-/* SEÇÃO BANDEIRAS */
-.section {
-    padding: 80px 20px;
-    background-color: #1A1A1A;
-    text-align: center;
-}
-
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #FFB800;
-    text-transform: uppercase;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #000000;
-    border: 2px solid #FFB800;
-    padding: 30px;
-    width: 280px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    background-color: #111;
-}
-
-.card h3 {
-    color: #FFB800;
-    margin-bottom: 15px;
-}
-
-.card p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* ANIMAÇÃO */
-@keyframes zoomHero {
-    from { background-size: 100%; }
-    to { background-size: 110%; }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
     .hero h1 {
-        font-size: 32px;
+      font-size: 42px;
+      font-weight: 800;
+      color: #FFC107;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
     }
 
     .hero p {
-        font-size: 16px;
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #f5f5f5;
     }
-}
-</style>
-</head>
 
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background-color: #FFC107;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background-color: #FFB800;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid #FFC107;
+      color: #FFC107;
+    }
+
+    .btn-outline:hover {
+      background-color: #FFC107;
+      color: #000;
+      transform: translateY(-2px);
+    }
+
+    /* SECTION BANDEIRAS */
+    .bandeiras {
+      background-color: #1A1A1A;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .bandeiras h2 {
+      color: #FFC107;
+      font-size: 30px;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #000000;
+      border: 2px solid #FFC107;
+      padding: 30px;
+      width: 300px;
+      text-align: left;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(255,193,7,0.3);
+    }
+
+    .card h3 {
+      color: #FFC107;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+
+  </style>
+</head>
 <body>
 
-<section class="hero">
+  <!-- HERO -->
+  <section class="hero">
     <div class="hero-content">
-        <h1>Ely Manoel Machado</h1>
-        <p>Pré-Candidato a Deputado Federal pela Missão<br>
-        O Brasil não precisa de mais políticos. Precisa de coragem.</p>
+      <h1>ELY MANOEL MACHADO</h1>
+      <p>
+        Pré-candidato a Deputado Federal pela Missão.  
+        Minas Gerais e Brasil precisam de coragem. 
+        Gestão acima de ideologia.
+      </p>
 
-        <div class="buttons">
-            <a href="#" class="btn btn-primary">ENTRE NO GRUPO DE ZAP</a>
-            <a href="#" class="btn btn-outline">LEIA MEUS ARTIGOS</a>
-        </div>
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">ENTRE NO GRUPO DE ZAP</a>
+        <a href="https://concreto.jor.br/ely-manoel/" target="_blank" class="btn btn-outline">LEIA MEUS ARTIGOS</a>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-    <h2>Minhas Bandeiras</h2>
+  <!-- BANDEIRAS -->
+  <section class="bandeiras">
+    <h2>MINHAS BANDEIRAS</h2>
 
     <div class="cards">
 
-        <div class="card">
-            <h3>🛡 Segurança Pública</h3>
-            <p>
-            Estado forte contra o crime.<br>
-            Sem romantização de facção.
-            </p>
-        </div>
+      <div class="card">
+        <h3>🛡 Segurança Pública</h3>
+        <p>
+          Estado forte contra o crime.  
+          Polícia valorizada.  
+          Fim da romantização de facção.  
+          Lei cumprida.
+        </p>
+      </div>
 
-        <div class="card">
-            <h3>💰 Liberdade Econômica</h3>
-            <p>
-            Menos imposto.<br>
-            Mais oportunidade.<br>
-            Mais empreendedor.
-            </p>
-        </div>
+      <div class="card">
+        <h3>💰 Liberdade Econômica</h3>
+        <p>
+          Menos imposto.  
+          Mais oportunidade.  
+          Incentivo ao empreendedor.  
+          Governo que não atrapalha quem trabalha.
+        </p>
+      </div>
 
-        <div class="card">
-            <h3>🚫 Combate ao Populismo</h3>
-            <p>
-            O Brasil precisa de gestão,<br>
-            não de narrativas ideológicas.
-            </p>
-        </div>
+      <div class="card">
+        <h3>🚫 Combate ao Populismo</h3>
+        <p>
+          O Brasil precisa de gestão.  
+          Resultados reais.  
+          Não de narrativas ideológicas.  
+          Chega de promessas vazias.
+        </p>
+      </div>
 
     </div>
-</section>
+  </section>
+
+  <footer>
+    © 2026 Ely Manoel Machado • Partido Missão
+  </footer>
 
 </body>
 </html>
+
+
+</body>
+</html>
+
