@@ -1,162 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ely - Em Construção</title>
 
-<title>Ely Manoel</title>
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
+    body {
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #002B5C, #0056A3); /* Azul institucional */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
 
-body{
-font-family:'DM Sans', sans-serif;
-background:#000;
-color:#fff;
-}
+    .container {
+      max-width: 600px;
+    }
 
-section{
-padding:100px 20px;
-}
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
 
-.container{
-max-width:1200px;
-margin:auto;
-}
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
 
-h1{
-font-family:'Anton', sans-serif;
-font-size:clamp(48px,8vw,120px);
-line-height:1;
-letter-spacing:2px;
-}
+    .linha {
+      width: 80px;
+      height: 4px;
+      background-color: #F2A900; /* Amarelo destaque */
+      margin: 20px auto;
+      border-radius: 4px;
+    }
 
-h2{
-font-size:36px;
-margin-bottom:30px;
-}
+    .small {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
 
-p{
-font-size:18px;
-line-height:1.6;
-max-width:700px;
-}
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
 
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:flex-start;
-padding:0 10%;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), 
-url("foto.jpg") center top/cover no-repeat;
-}
+      p {
+        font-size: 1rem;
+      }
+    }
 
-.hero p{
-margin:20px 0 40px 0;
-font-size:20px;
-}
-
-.btn{
-display:inline-block;
-padding:16px 40px;
-border:2px solid #fff;
-text-decoration:none;
-color:#fff;
-font-weight:500;
-transition:.3s;
-}
-
-.btn:hover{
-background:#fff;
-color:#000;
-}
-
-.manifesto{
-background:#111;
-text-align:center;
-}
-
-.propostas{
-background:#fff;
-color:#000;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-margin-top:60px;
-}
-
-.card{
-padding:40px;
-border:1px solid #ddd;
-}
-
-.footer{
-background:#000;
-text-align:center;
-font-size:14px;
-opacity:.6;
-}
-</style>
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    <h1>Estamos em construção</h1>
+    <div class="linha"></div>
+    <p>Trabalhando por uma Minas Gerais<br>e um Brasil melhor.</p>
+    <div class="small">Em breve novidades.</div>
+  </div>
+</body>
+</html>
 
-<section class="hero">
-<h1>ELY MANOEL</h1>
-<p>Coragem para mudar. Compromisso com o Brasil.</p>
-<a href="#propostas" class="btn">Conheça as propostas</a>
-</section>
-
-<section class="manifesto">
-<div class="container">
-<h2>O Brasil precisa de firmeza</h2>
-<p>
-Chega de política velha. Chega de acordos obscuros.
-É hora de responsabilidade fiscal, segurança pública forte
-e liberdade econômica para quem trabalha.
-</p>
-</div>
-</section>
-
-<section class="propostas" id="propostas">
-<div class="container">
-<h2>Prioridades</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Segurança</h3>
-<p>Tolerância zero ao crime organizado e as facções criminosas.</p>
-</div>
-
-<div class="card">
-<h3>Economia</h3>
-<p>Menos impostos, mais liberdade para empreender.</p>
-</div>
-
-<div class="card">
-<h3>Ideologia</h3>
-<p>Combate ao petismo.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="footer">
-<p>© 2026 Ely Manoel</p>
-</section>
 
 </body>
 </html>
 
-</body>
-</html>
 
